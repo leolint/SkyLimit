@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Football</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_wrapper">
+                <figure class="header_wrapper-logo">
+                    <img src="./img/soccer_ball2.svg" alt="logo">
+                    <figcaption>Football</figcaption>
+                </figure>
+                <nav class="header_wrapper-nav">
+                    <ul class="header_wrapper-nav--list">
+                        <li class="header_wrapper-nav--list__link">Головна</li>
+                        <li class="header_wrapper-nav--list__link">Внутрішня про гру</li>
+                        <li class="header_wrapper-nav--list__link">Контакти</li>
+                    </ul>
+                </nav>
+                <button class="header_wrapper-button">
+                    Кнопка
+                </button>
+                <button id="openMenu" class="header_wrapper-button">
+                    Меню
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="container">
+                <div class="intro_wrapper">
+                    <h1 class="intro_wrapper-title">Полюбляєш футбол?</h1>
+                    <h2 class="intro_wrapper-subtitle">Отримай м'яч на першу гру</h2>
+                    <button class="intro_wrapper-button">Отримати м'яч</button>
+                </div>
+            </div>
+        </section>
+        <section class="ball">
+            <div class="container">
+                <div class="ball_wrapper">
+                    <h3 class="ball_wrapper-title">Почни гру з вибору м'яча</h3>
+                    <p class="ball_wrapper-text">Будь-який спорт починається з правильного обладнання. Ми пропонуємо
+                        ознайомитися з асортиментом
+                        наших фірмових ігрових м'ячів та обрати свій. Увійди в гру з максимальною перевагою та обійди
+                        всіх суперників з бонусами та чудовим настроєм.</p>
+                    <swiper-container>
+                        <swiper-slide>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="slide-item">
+                                <img class="slide-item-img" src="./img/soccer_ball2.svg" alt="ball">
+                                <figcaption>
+                                    <p class="slide-item-title">Гігам'яч</p>
+                                    <p class="slide-item-subtitle">Чудовий вибір для початківця</p>
+                                </figcaption>
+                            </figure>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@mixin br($br) {
+    @if $br==xs {
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+
+    @if $br==sm {
+        @media (max-width: 450px) {
+            @content;
+        }
+    }
+
+    @if $br==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $br==lg {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+}
+

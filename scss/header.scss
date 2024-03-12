@@ -1,0 +1,141 @@
+@import 'mixins';
+
+.header {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        &-logo {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 50px;
+            margin: 0px 0px 0px 0px;
+            img {
+                width: 50px;
+            }
+
+            figure {
+                color: white;
+                margin: 0px 0px 0px 0px;
+            }
+        }
+
+        &-nav {
+
+            @include br(sm) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                position: fixed;
+                right: -100%;
+                top: 0%;
+                background-color: black;
+                color: white;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                transition: 0.4s ease;
+            }
+
+            &--list {
+                display: flex;
+                list-style-type: none;
+                padding: 0px 0px 0px 0px;
+
+                @include br(sm) {
+                    flex-direction: column;
+                }
+
+                &__link {
+                    margin: 20px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    border-bottom: 1px transparent solid;
+                    transition: 0.4s ease;
+                    &:hover {
+                        border-bottom: 1px aqua solid;
+                        transition: 0.4s ease;
+                    }
+                    @include br(sm) {
+                        width: 200px;
+                        text-align: center;
+                        border-bottom: 2px aqua solid;
+                        padding: 0px 0px 5px 0px;
+                        font-size: 30px;
+                    }
+                
+                }
+            }
+        }
+
+        &-button {
+            width: 100px;
+            height: 40px;
+            background-color: gray;
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 3px;
+            position: relative;
+            cursor: pointer;
+            transition: 0.4s ease;
+            z-index: 3;
+
+            @include br(sm) {
+                width: 80px;
+                font-size: 15px;
+            }
+
+            &:hover {
+
+                @media (hover: hover) {
+                    transform: scale(1.2);
+                    &::before {
+                        width: 100%;
+                        transition: 0.4s ease;
+                    }
+
+                }
+            }
+
+            &::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                background-color: aqua;
+                left: 0%;
+                top: 0%;
+                width: 0%;
+                height: 100%;
+                transition: 0.4s ease;
+                border-radius: 3px;
+            }
+        }
+
+        #openMenu {
+            display: none;
+            z-index: 10;
+
+            @include br(sm) {
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+.open {
+    right: 0%;
+    transition: 0.4s ease;
+}
